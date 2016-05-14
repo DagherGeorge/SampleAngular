@@ -1,20 +1,13 @@
-.heading-1 {
-	line-height: 36px;
-	font-size: 1.15em;
-}
-.heading-2 {
-	margin-top: 10px;
-	line-height: 32px;
-}
-.sub-heading {
-	font-size: .83rem;
-}
+
 
 .main-container {
 	width: 90%;
 	height: 90%;
 	margin: auto auto;
 	border-radius: 10px;
+	position: absolute;
+	top: 5%;
+	left: 5%;
 }
 
 .master-container {
@@ -73,10 +66,7 @@
 .cell {
 	height: 78px;
 	padding-right: 10px;
-}
-.cell.active {
-	/* to compensate for the removed border */
-	height: 80px; 
+	cursor: pointer;
 }
 .cell-icon {
 	width: 96px;
@@ -89,12 +79,12 @@
 	height: 100%;
 	float: left;
 }
-.indicator .new {
+.new .indicator-icon {
 	width: 10px;
 	height: 10px;
 	margin: 32px auto;
 }
-.indicator .new, .message-text {
+.new .indicator-icon, .message-text {
 	border-radius: 5px;
 }
 

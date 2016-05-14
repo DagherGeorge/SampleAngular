@@ -1,6 +1,12 @@
 .main-container {
 	background-color: #FFFFFF;
 	box-shadow: 0px 8px 0px 0px #D7D5D0;
+	overflow: hidden;
+}
+
+.cell:hover {
+	background-color: #E7F1F0;
+	cursor: pointer;
 }
 
 .cell + * {
@@ -9,19 +15,18 @@
 
 .cell.active {
 	background-color: #E5F4FA;
-	border-top: #E9E9E9;
 	font-weight: bold;
 }
 
-.cell.active + * {
-	border-top: #E9E9E9;
+.cell.active, .cell.active + * {
+	border-top: solid #E5F4FA 1px;
 }
 
 .cell.new {
 	font-weight: bold;
 }
 
-.indicator .new {
+.new .indicator-icon {
 	background-color: #2A9AC6;
 }
 
@@ -51,4 +56,8 @@
 	background-color: #76C797;
 	box-shadow: 0px 4px 0px 0px #69B287;
 	color: #fff;
+}
+.btn-grn:hover {
+	background-color: #a4daba;
+	cursor: pointer;
 }

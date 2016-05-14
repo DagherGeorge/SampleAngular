@@ -7,161 +7,52 @@
 	<link rel="stylesheet" type="text/css" href="css/skins.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/services.js"></script>
 </head>
-<body>
+<body ng-app="SampleApp" ng-controller="SampleController as ctrl">
 	<div class="main-container">
 		<div class="master-container">
-			<div class="cell new">
+			<div ng-repeat="conversation in ctrl.conversations"
+				 ng-class="{new: conversation.isNew, active: conversation.isActive}"
+				 ng-click="ctrl.viewConversation(conversation)"
+				 class="cell">
 				<div class="cell-icon">
 					<div class="indicator">
-						<div class="new"></div>
+						<div class="indicator-icon"></div>
 					</div>
 					<div class="circular"></div>
 				</div>
 				<div class="cell-detail">
-					<div class="heading-2">Starbucks - Bill M</div>
-
-					<div class="sub-heading truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</div>
+					<div class="heading-2 truncate" ng-bind="conversation.sender.name"></div>
+					<div class="sub-heading truncate" ng-bind="conversation.messageHeading.message"></div>
 				</div>
 			</div>
-			<div class="cell active">
-				<div class="cell-icon">
-					<div class="indicator"></div>
-					<div class="circular"></div>
-				</div>
-				<div class="cell-detail">
-					<div class="heading-2">Coca Cola - Mike K</div>
-
-					<div class="sub-heading truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</div>
-				</div>
-			</div>
-			<div class="cell">
-				<div class="cell-icon">
-					<div class="indicator"></div>
-					<div class="circular"></div>
-				</div>
-				<div class="cell-detail">
-					<div class="heading-2">Adobe - Mike K</div>
-
-					<div class="sub-heading truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</div>
-				</div>
-			</div>
-			<div class="cell"></div>
-			<div class="cell"></div>
-			<div class="cell"></div>
-			<div class="cell"></div>
-			<div class="cell"></div>
-			<div class="cell"></div>
-			<div class="cell"></div>
-			<div class="cell"></div>
-			<div class="cell"></div>
-			<div class="cell"></div>
 		</div>
 		<div class="detail-container">
-			<div class="heading-1">
-				Starbucks - Bill Muray
+			<div class="heading-1" ng-bind="ctrl.currentlyViewing.sender.name">
 			</div>
 			<div id="message-center" class="message-table">
-				<div class="right">
+				<div ng-repeat="message in ctrl.currentlyViewing.messageHistory"
+					 ng-class="{right: !message.isRecieved}"
+					 class="message">
 					<div class="icon circular"></div>
 					<div class="message-cell">
-						<div class="heading-1">Me</div>
-						<div class="message-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, se
-						</div>
+						<div class="heading-1"
+							 ng-bind="message.isRecieved ? ctrl.currentlyViewing.sender.name : 'Me'"></div>
+						<div class="message-text" ng-bind="message.message"></div>
 						<div class="timestamp">
-							<div>2:54 PM</div><div class="circle-sm"></div> <div>3/14/2016</div>
-						</div>
-					</div>
-				</div>
-				<div class="message">
-					<div class="icon circular"></div>
-					<div class="message-cell">
-						<div class="heading-1">Starbucks - Bill Muray</div>
-						<div class="message-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</div>
-						<div class="timestamp">
-							<div>2:54 PM</div><div class="circle-sm"></div> <div>3/14/2016</div>
-						</div>
-					</div>
-				</div>
-				<div class="message right">
-					<div class="icon circular"></div>
-					<div class="message-cell">
-						<div class="heading-1">Me</div>
-						<div class="message-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, se
-						</div>
-						<div class="timestamp">
-							<div>2:54 PM</div><div class="circle-sm"></div> <div>3/14/2016</div>
-						</div>
-					</div>
-				</div>
-				<div class="message">
-					<div class="icon circular"></div>
-					<div class="message-cell">
-						<div class="heading-1">Starbucks - Bill Muray</div>
-						<div class="message-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</div>
-						<div class="timestamp">
-							<div>2:54 PM</div><div class="circle-sm"></div> <div>3/14/2016</div>
-						</div>
-					</div>
-				</div>
-				<div class="message right">
-					<div class="icon circular"></div>
-					<div class="message-cell">
-						<div class="heading-1">Me</div>
-						<div class="message-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, se
-						</div>
-						<div class="timestamp">
-							<div>2:54 PM</div><div class="circle-sm"></div> <div>3/14/2016</div>
-						</div>
-					</div>
-				</div>
-				<div class="message">
-					<div class="icon circular"></div>
-					<div class="message-cell">
-						<div class="heading-1">Starbucks - Bill Muray</div>
-						<div class="message-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</div>
-						<div class="timestamp">
-							<div>2:54 PM</div><div class="circle-sm"></div> <div>3/14/2016</div>
+							<div ng-bind="message.timestamp"></div>
+							<div class="circle-sm"></div>
+							<div ng-bind="message.datestamp">s</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="message-box">
-				<div id="textarea" contenteditable></div>
-				<div class="btn btn-grn">SEND</div>
-			</div>
+			<form class="message-box">
+				<div id="textarea" contenteditable ng-model="ctrl.userMessage" gd-text-area></div>
+				<div class="btn btn-grn" ng-click="ctrl.addMessage(ctrl.currentlyViewing, ctrl.userMessage)">SEND</div>
+			</form>
 		</div>
 	</div>
-
-	<script type="text/javascript">
-
-	</script>
 </body>
 </html>
