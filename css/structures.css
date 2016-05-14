@@ -21,7 +21,6 @@
 	width: 30%;
 	overflow-y: auto; 
 }
-
 .master-container, .detail-container, .cell > * {
 	float: left;
 	height: 100%;
@@ -31,13 +30,11 @@
 	width: 70%;
 	padding: 12px;
 }
-
 .message-table {
 	height: calc(100% - 94px);
 	overflow-y: auto;
 	padding-right: 10px;
 }
-
 .message-cell {
 	width: calc(100% - 76px);
 	margin-left: 12px;
@@ -47,7 +44,6 @@
 .message-text {
 	padding: 12px;
 }
-
 .cell .circular, .message .circular {
 	float: left;
 }
@@ -67,7 +63,6 @@
 	text-align: right;
 	line-height: 32px;
 }
-
 .timestamp * {
 	float: left;
 }
@@ -79,7 +74,6 @@
 	height: 78px;
 	padding-right: 10px;
 }
-
 .cell.active {
 	/* to compensate for the removed border */
 	height: 80px; 
@@ -110,7 +104,6 @@
 	border-radius: 32px;
 	margin: 8px auto;
 }
-
 .circle-sm {
 	width: 6px;
 	height: 6px;
@@ -118,7 +111,6 @@
 	background-color: #7C7C7C;
 	margin: 13px 7px;
 }
-
 .btn {
 	display: inline-block;
 	width: 144px;
@@ -126,7 +118,6 @@
 	text-align: center;
 	padding: 10px;
 }
-
 .message-box .btn {
 	vertical-align: bottom;
 	position: relative;
@@ -143,4 +134,8 @@
 	margin-top: 10px;
 	box-shadow: 0px -2px 0px 0px #D7D5D0;
 	border-radius: 5px;
+}
+
+#textarea:focus {
+    outline: none;
 }
