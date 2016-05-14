@@ -1,0 +1,146 @@
+.heading-1 {
+	line-height: 36px;
+	font-size: 1.15em;
+}
+.heading-2 {
+	margin-top: 10px;
+	line-height: 32px;
+}
+.sub-heading {
+	font-size: .83rem;
+}
+
+.main-container {
+	width: 90%;
+	height: 90%;
+	margin: auto auto;
+	border-radius: 10px;
+}
+
+.master-container {
+	width: 30%;
+	overflow-y: auto; 
+}
+
+.master-container, .detail-container, .cell > * {
+	float: left;
+	height: 100%;
+}
+
+.detail-container {
+	width: 70%;
+	padding: 12px;
+}
+
+.message-table {
+	height: calc(100% - 94px);
+	overflow-y: auto;
+	padding-right: 10px;
+}
+
+.message-cell {
+	width: calc(100% - 76px);
+	margin-left: 12px;
+	float: left;
+}
+
+.message-text {
+	padding: 12px;
+}
+
+.cell .circular, .message .circular {
+	float: left;
+}
+
+.right .circular, .right .message-cell {
+	float: right;
+}
+.right .message-cell {
+	margin-left: 0;
+	margin-right: 12px;
+}
+.right .heading-1 {
+	text-align: right;
+}
+
+.timestamp {
+	text-align: right;
+	line-height: 32px;
+}
+
+.timestamp * {
+	float: left;
+}
+.right .timestamp {
+	text-align: left;
+}
+
+.cell {
+	height: 78px;
+	padding-right: 10px;
+}
+
+.cell.active {
+	/* to compensate for the removed border */
+	height: 80px; 
+}
+.cell-icon {
+	width: 96px;
+}
+.cell-detail {
+	width: calc(100% - 96px);
+}
+.indicator {
+	width: 22px;
+	height: 100%;
+	float: left;
+}
+.indicator .new {
+	width: 10px;
+	height: 10px;
+	margin: 32px auto;
+}
+.indicator .new, .message-text {
+	border-radius: 5px;
+}
+
+.circular {
+	width: 64px;
+	height: 64px;
+	border-radius: 32px;
+	margin: 8px auto;
+}
+
+.circle-sm {
+	width: 6px;
+	height: 6px;
+	border-radius: 3px;
+	background-color: #7C7C7C;
+	margin: 13px 7px;
+}
+
+.btn {
+	display: inline-block;
+	width: 144px;
+	border-radius: 5px;
+	text-align: center;
+	padding: 10px;
+}
+
+.message-box .btn {
+	vertical-align: bottom;
+	position: relative;
+	bottom: 11px;
+}
+
+#textarea {
+	width: calc(100% - 150px);
+	line-height: 38px;
+    min-height: 38px;
+	display: inline-block;
+	padding: 0 12px;
+	margin-bottom: 8px;
+	margin-top: 10px;
+	box-shadow: 0px -2px 0px 0px #D7D5D0;
+	border-radius: 5px;
+}

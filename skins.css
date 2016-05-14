@@ -1,0 +1,54 @@
+.main-container {
+	background-color: #FFFFFF;
+	box-shadow: 0px 8px 0px 0px #D7D5D0;
+}
+
+.cell + * {
+	border-top: solid #E9E9E9 1px;
+}
+
+.cell.active {
+	background-color: #E5F4FA;
+	border-top: #E9E9E9;
+	font-weight: bold;
+}
+
+.cell.active + * {
+	border-top: #E9E9E9;
+}
+
+.cell.new {
+	font-weight: bold;
+}
+
+.indicator .new {
+	background-color: #2A9AC6;
+}
+
+.circular {
+	background-color: #D8D8D8;
+}
+
+.detail-container > *:not(:last-child) {
+	border-bottom: solid #E9E9E9 2px;
+}
+
+.message-text, #textarea {
+	background-color: #F0F1F3;
+}
+
+.right .message-text {
+	background-color: #E7F1F0;
+}
+
+.truncate {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.btn-grn {
+	background-color: #76C797;
+	box-shadow: 0px 4px 0px 0px #69B287;
+	color: #fff;
+}

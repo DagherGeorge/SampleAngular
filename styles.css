@@ -1,0 +1,21 @@
+body, html {
+	background-color: #F0EDE8;
+	height: 100%;
+	color: #6C6C6C;
+	font-family: serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
