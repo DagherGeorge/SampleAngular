@@ -78,8 +78,3 @@ angular.module('SampleApp', [])
     }
   };
 }]);
-
-
-document.addEventListener("DOMContentLoaded", function() {
-
-});
