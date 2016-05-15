@@ -106,12 +106,12 @@
 	width: 144px;
 	border-radius: 5px;
 	text-align: center;
-	padding: 10px;
+	padding: 9px;
 }
 .message-box .btn {
-	vertical-align: bottom;
+	vertical-align: top;
 	position: relative;
-	bottom: 11px;
+	top: 7px;
 }
 
 #textarea {

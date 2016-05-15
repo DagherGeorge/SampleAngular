@@ -61,7 +61,12 @@ angular.module('SampleApp')
 	messageHeading: {
 		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven'
 	},
-	messageHistory: []
+	messageHistory: [{
+		isRecieved: true,
+		message: 'rem ipsum dolor sit amet, consectetur adipisicing elit, se',
+		timestamp: '2:54 PM',
+		datestamp: '3/14/2016'
+	}]
 }, {
 	isNew: true,
 	sender: {
@@ -70,7 +75,12 @@ angular.module('SampleApp')
 	messageHeading: {
 		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven'
 	},
-	messageHistory: []
+	messageHistory: [{
+		isRecieved: true,
+		message: 'rem ipsum dolor sit amet, consectetur adipisicing elit, se',
+		timestamp: '2:54 PM',
+		datestamp: '3/14/2016'
+	}]
 }, {
 	isNew: true,
 	sender: {
@@ -79,7 +89,12 @@ angular.module('SampleApp')
 	messageHeading: {
 		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven'
 	},
-	messageHistory: []
+	messageHistory: [{
+		isRecieved: true,
+		message: 'rem ipsum dolor sit amet, consectetur adipisicing elit, se',
+		timestamp: '2:54 PM',
+		datestamp: '3/14/2016'
+	}]
 }, {
 	isNew: false,
 	sender: {
@@ -88,7 +103,12 @@ angular.module('SampleApp')
 	messageHeading: {
 		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven'
 	},
-	messageHistory: []
+	messageHistory: [{
+		isRecieved: true,
+		message: 'rem ipsum dolor sit amet, consectetur adipisicing elit, se',
+		timestamp: '2:54 PM',
+		datestamp: '3/14/2016'
+	}]
 }, {
 	isNew: false,
 	sender: {
@@ -97,7 +117,12 @@ angular.module('SampleApp')
 	messageHeading: {
 		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven'
 	},
-	messageHistory: []
+	messageHistory: [{
+		isRecieved: true,
+		message: 'rem ipsum dolor sit amet, consectetur adipisicing elit, se',
+		timestamp: '2:54 PM',
+		datestamp: '3/14/2016'
+	}]
 }, {
 	isNew: true,
 	sender: {
@@ -106,7 +131,12 @@ angular.module('SampleApp')
 	messageHeading: {
 		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven'
 	},
-	messageHistory: []
+	messageHistory: [{
+		isRecieved: true,
+		message: 'rem ipsum dolor sit amet, consectetur adipisicing elit, se',
+		timestamp: '2:54 PM',
+		datestamp: '3/14/2016'
+	}]
 }, {
 	isNew: true,
 	sender: {
@@ -115,7 +145,12 @@ angular.module('SampleApp')
 	messageHeading: {
 		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven'
 	},
-	messageHistory: []
+	messageHistory: [{
+		isRecieved: true,
+		message: 'rem ipsum dolor sit amet, consectetur adipisicing elit, se',
+		timestamp: '2:54 PM',
+		datestamp: '3/14/2016'
+	}]
 }, {
 	isNew: false,
 	sender: {
@@ -124,7 +159,12 @@ angular.module('SampleApp')
 	messageHeading: {
 		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven'
 	},
-	messageHistory: []
+	messageHistory: [{
+		isRecieved: true,
+		message: 'rem ipsum dolor sit amet, consectetur adipisicing elit, se',
+		timestamp: '2:54 PM',
+		datestamp: '3/14/2016'
+	}]
 }, {
 	isNew: false,
 	sender: {

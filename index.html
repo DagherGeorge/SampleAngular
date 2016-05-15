@@ -24,7 +24,7 @@
 				</div>
 				<div class="cell-detail">
 					<div class="heading-2 truncate" ng-bind="conversation.sender.name"></div>
-					<div class="sub-heading truncate" ng-bind="conversation.messageHeading.message"></div>
+					<div class="sub-heading truncate" ng-bind="conversation.messageHistory[conversation.messageHistory.length-1].message"></div>
 				</div>
 			</div>
 		</div>
