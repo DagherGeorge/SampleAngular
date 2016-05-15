@@ -9,33 +9,8 @@ angular.module('SampleApp')
 		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven'
 	},
 	messageHistory: [{
-		isRecieved: false,
-		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, se',
-		timestamp: '2:54 PM',
-		datestamp: '3/14/2016'
-	}, {
 		isRecieved: true,
-		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-		timestamp: '2:54 PM',
-		datestamp: '3/14/2016'
-	}, {
-		isRecieved: false,
-		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, se',
-		timestamp: '2:54 PM',
-		datestamp: '3/14/2016'
-	}, {
-		isRecieved: true,
-		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-		timestamp: '2:54 PM',
-		datestamp: '3/14/2016'
-	}, {
-		isRecieved: false,
-		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, se',
-		timestamp: '2:54 PM',
-		datestamp: '3/14/2016'
-	}, {
-		isRecieved: true,
-		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+		message: 'rem ipsum dolor sit amet, consectetur adipisicing elit, se',
 		timestamp: '2:54 PM',
 		datestamp: '3/14/2016'
 	}]
@@ -48,8 +23,33 @@ angular.module('SampleApp')
 		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven'
 	},
 	messageHistory: [{
+		isRecieved: false,
+		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, se',
+		timestamp: '2:54 PM',
+		datestamp: '3/14/2016'
+	}, {
 		isRecieved: true,
-		message: 'rem ipsum dolor sit amet, consectetur adipisicing elit, se',
+		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+		timestamp: '2:54 PM',
+		datestamp: '3/14/2016'
+	}, {
+		isRecieved: false,
+		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, se',
+		timestamp: '2:54 PM',
+		datestamp: '3/14/2016'
+	}, {
+		isRecieved: true,
+		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+		timestamp: '2:54 PM',
+		datestamp: '3/14/2016'
+	}, {
+		isRecieved: false,
+		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, se',
+		timestamp: '2:54 PM',
+		datestamp: '3/14/2016'
+	}, {
+		isRecieved: true,
+		message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 		timestamp: '2:54 PM',
 		datestamp: '3/14/2016'
 	}]

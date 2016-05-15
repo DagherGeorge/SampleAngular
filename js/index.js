@@ -39,12 +39,6 @@ angular.module('SampleApp', [])
     link: function(scope, element, attrs, ngModel) {
       if (!ngModel) return; // do nothing if no ng-model
 
-      // Specify how UI should be updated
-      ngModel.$render = function() {
-        element.text(ngModel.$viewValue || '');
-        setNewHeight();
-      };
-
       // Listen for change events to enable binding
       element.on('blur keydown change', function() {
         scope.$eval(read);
@@ -70,7 +64,14 @@ angular.module('SampleApp', [])
       function setNewHeight() {
       	var messageSize = textArea.parentElement.getBoundingClientRect().height;
       	messageCenter.style.height = 'calc( 100% - ' + (messageSize + headerHeight)+ 'px)';
+      	messageCenter.scrollTop = messageCenter.scrollHeight;
       }
+
+      // Specify how UI should be updated
+      ngModel.$render = function() {
+        element.text(ngModel.$viewValue || '');
+        setNewHeight();
+      };
       
       textarea.addEventListener('input', setNewHeight);
       window.addEventListener('resize', setNewHeight);

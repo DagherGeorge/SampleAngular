@@ -25,8 +25,8 @@
 }
 .message-table {
 	height: calc(100% - 94px);
-	overflow-y: auto;
 	padding-right: 10px;
+	overflow-y: auto;
 }
 .message-cell {
 	width: calc(100% - 76px);
